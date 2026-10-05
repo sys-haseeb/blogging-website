@@ -1,0 +1,107 @@
+[
+  {
+    "id": 15,
+    "title": "Building this blog: Flask, SQLite and vanilla JS",
+    "category": "Project",
+    "content": "Flask serves the pages, SQLite stores the posts, and a small script.js fetches them from /api/posts. No frameworks, just the basics working together.",
+    "created_at": "2026-09-29"
+  },
+  {
+    "id": 14,
+    "title": "What is overfitting in machine learning?",
+    "category": "AI/ML",
+    "content": "A model that memorizes the training data performs badly on new data. Use a train/test split, keep the model simple, and gather more data to keep it honest.",
+    "created_at": "2026-09-27"
+  },
+  {
+    "id": 13,
+    "title": "Git in four commands",
+    "category": "Git",
+    "content": "git add stages your changes, git commit saves a snapshot, git push uploads it, and git pull brings down changes from others. Commit small and often.",
+    "created_at": "2026-09-25"
+  },
+  {
+    "id": 12,
+    "title": "Why you should use parameterized queries",
+    "category": "SQL",
+    "content": "Never build SQL by joining strings with user input. Use placeholders like ? and pass the values separately so an attacker cannot inject their own SQL.",
+    "created_at": "2026-09-23"
+  },
+  {
+    "id": 11,
+    "title": "SQL basics: SELECT, WHERE and ORDER BY",
+    "category": "SQL",
+    "content": "SELECT picks columns, WHERE filters rows and ORDER BY sorts the result. Add DESC to see the newest rows first, which is exactly how this blog lists its posts.",
+    "created_at": "2026-09-21"
+  },
+  {
+    "id": 10,
+    "title": "Sessions in Flask: remembering who logged in",
+    "category": "Flask",
+    "content": "Flask stores session data in a signed cookie. Set session[\"logged_in\"] = True after a valid login, and check it at the top of any protected route.",
+    "created_at": "2026-09-19"
+  },
+  {
+    "id": 9,
+    "title": "Your first Flask route",
+    "category": "Flask",
+    "content": "Create an app with Flask(__name__), decorate a function with @app.route(\"/\") and return a string or render_template. Run it and you have a working web server.",
+    "created_at": "2026-09-17"
+  },
+  {
+    "id": 8,
+    "title": "Four pillars of OOP in Python",
+    "category": "Python",
+    "content": "Encapsulation hides internal state, inheritance reuses code, polymorphism lets different classes share an interface, and abstraction exposes only what the caller needs.",
+    "created_at": "2026-09-15"
+  },
+  {
+    "id": 7,
+    "title": "Python list comprehensions with real examples",
+    "category": "Python",
+    "content": "A comprehension like [x * x for x in range(10) if x % 2 == 0] builds a list in one readable line. If the logic gets long, switch back to a normal loop.",
+    "created_at": "2026-09-13"
+  },
+  {
+    "id": 6,
+    "title": "Fetch and async/await made simple",
+    "category": "JavaScript",
+    "content": "fetch returns a promise. Wrap it in an async function, await the response, check res.ok, then call res.json(). Add try/catch so network errors do not fail silently.",
+    "created_at": "2026-09-11"
+  },
+  {
+    "id": 5,
+    "title": "Reading input values with DOM events",
+    "category": "JavaScript",
+    "content": "Attach a submit listener to the form, call preventDefault, then read values from form.elements. The page stays put and you decide what happens next.",
+    "created_at": "2026-09-09"
+  },
+  {
+    "id": 4,
+    "title": "let, const and var: what actually changes",
+    "category": "JavaScript",
+    "content": "var is function-scoped and hoisted, while let and const are block-scoped. Default to const, switch to let only when the value must change, and skip var.",
+    "created_at": "2026-09-07"
+  },
+  {
+    "id": 3,
+    "title": "Flexbox vs Grid: when I use which",
+    "category": "CSS",
+    "content": "Flexbox is for one-dimensional layouts like navbars and button rows. Grid is for two dimensions, like a card gallery where rows and columns both matter.",
+    "created_at": "2026-09-05"
+  },
+  {
+    "id": 2,
+    "title": "The CSS box model in five minutes",
+    "category": "CSS",
+    "content": "Every element is a box: content, padding, border and margin. Add box-sizing: border-box and width finally includes padding and border, which saves a lot of layout headaches.",
+    "created_at": "2026-09-03"
+  },
+  {
+    "id": 1,
+    "title": "Semantic HTML: why div is not always the answer",
+    "category": "HTML",
+    "content": "Tags like header, nav, main, article and footer describe what the content is. Screen readers and search engines understand them, and your markup becomes easier to read.",
+    "created_at": "2026-09-01"
+  }
+]

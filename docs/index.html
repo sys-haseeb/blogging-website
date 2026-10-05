@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <button class="site-title" id="home-link" type="button">Pulse</button>
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="nav-saved" type="button">Saved</button>
+        <button class="btn" id="nav-profile" type="button">Sign in</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div data-view="home">
+      <section id="live-section">
+        <h1 class="section-title">Live from around the world</h1>
+        <p class="section-intro" id="live-status">Loading stories...</p>
+        <div class="tabs" id="tabs">
+          <button class="tab active" type="button" data-cat="top">Top</button>
+          <button class="tab" type="button" data-cat="world">World</button>
+          <button class="tab" type="button" data-cat="sports">Sports</button>
+          <button class="tab" type="button" data-cat="entertainment">Movies &amp; TV</button>
+          <button class="tab" type="button" data-cat="technology">Tech</button>
+          <button class="tab" type="button" data-cat="science">Science</button>
+          <button class="tab" type="button" data-cat="business">Business</button>
+        </div>
+        <div class="field search">
+          <input type="search" id="search" placeholder="Search these stories" aria-label="Search stories">
+        </div>
+        <div class="feed" id="live-feed"></div>
+      </section>
+
+      <section id="feed-section">
+        <h2 class="section-title">Editor's picks</h2>
+        <p class="section-intro">Our own notes.</p>
+        <div class="feed" id="feed"></div>
+      </section>
+    </div>
+
+    <section data-view="saved" class="hidden">
+      <h1 class="section-title">Saved stories</h1>
+      <p class="section-intro" id="saved-intro"></p>
+      <div class="feed" id="saved-feed"></div>
+    </section>
+
+    <section id="login-section" data-view="profile" class="hidden">
+      <div class="card">
+        <h2 id="profile-title">Choose a profile</h2>
+        <p class="section-intro" id="profile-note"></p>
+        <form class="form" id="profile-form">
+          <div class="field">
+            <label for="profile-name">Username</label>
+            <input type="text" id="profile-name" minlength="3" maxlength="20" autocomplete="off" required>
+          </div>
+          <p class="error-msg hidden" id="profile-error" role="alert">Use 3-20 letters, numbers or underscores.</p>
+          <button class="btn" type="submit">Continue</button>
+        </form>
+        <div class="tabs" id="profile-list"></div>
+        <button class="btn btn-outline hidden" id="logout-btn" type="button">Log out</button>
+        <p class="section-intro">Profiles are saved in this browser only. There are no passwords.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; 2026 Pulse</footer>
+  <script src="script.js"></script>
+</body>
+</html>
